@@ -29,7 +29,7 @@ Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\AppHost"
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer" -Name "SmartScreenEnabled" -Value "Off" -Force
 
 # Disable SmartScreen for downloaded files (Attachment Manager)
-Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 1 -Force
+Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Attachments" -Name "SaveZoneInformation" -Value 0 -Force
 
 # Disable Windows Defender SmartScreen
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\SmartScreenSettings" -Name "SmartScreenEnabled" -Value 0 -Force
